@@ -29,7 +29,7 @@
                         <a class="link" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="site-nav-list">
-                        <a class="link" href="#" >Контакты</a>
+                        <a class="link" href="#">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -52,6 +52,12 @@
                     </li>
                 </ul>
         </div>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, aspernatur.</p>
+                <button type="button" data-modal-close>Закрыть</button>
+            </div>
+        </div>
     </header>
 
     <!-- Блок герой -->
@@ -59,7 +65,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title" >Эффективные решения<br> для вашего бизнеса</h1>
-                <button class="button" type="button">Заказать услугу</button>
+                <button class="button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -294,59 +300,58 @@
                     </ul>
             </div>
         </section>
+        
+        <!-- Постоянные клиенты -->
+        <section class="customers">
+            <div class="container">
+                <h2 class="customers-title">Постоянные клиенты</h2>
+                <ul class="customers-title-list">
+                    <li class="customers-list">
+                        <a class="customers-a" href="#">
+                            <svg class="customers-list-a" width="106" height="60">
+                                <use href="./images/svg-sprite/symbol-defs.svg#icon-Client-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-list">
+                        <a class="customers-a" href="#">
+                            <svg class="customers-list-a" width="106" height="60">
+                                <use href="./images/svg-sprite/symbol-defs.svg#icon-Client-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-list">
+                        <a class="customers-a" href="#">
+                            <svg class="customers-list-a" width="106" height="60">
+                                <use href="./images/svg-sprite/symbol-defs.svg#icon-Client-3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-list">
+                        <a class="customers-a" href="#">
+                            <svg class="customers-list-a" width="106" height="60">
+                                <use href="./images/svg-sprite/symbol-defs.svg#icon-Client-4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-list">
+                        <a class="customers-a" href="#">
+                            <svg class="customers-list-a" width="106" height="60">
+                                <use href="./images/svg-sprite/symbol-defs.svg#icon-Client-5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-list">
+                        <a class="customers-a" href="#">
+                            <svg class="customers-list-a" width="106" height="60">
+                                <use href="./images/svg-sprite/symbol-defs.svg#icon-Client-6"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-
-    <!-- Постоянные клиенты -->
-    <section class="customers">
-        <div class="container">
-            <h2 class="customers-title">Постоянные клиенты</h2>
-            <ul class="customers-title-list">
-                <li class="customers-list">
-                    <a class="customers-a" href="#">
-                        <svg class="customers-list-a" width="106" height="60">
-                            <use href="./images/svg-sprite/symbol-defs.svg#icon-Client-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-list">
-                    <a class="customers-a" href="#">
-                        <svg class="customers-list-a" width="106" height="60">
-                            <use href="./images/svg-sprite/symbol-defs.svg#icon-Client-2"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-list">
-                    <a class="customers-a" href="#">
-                        <svg class="customers-list-a" width="106" height="60">
-                            <use href="./images/svg-sprite/symbol-defs.svg#icon-Client-3"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-list">
-                    <a class="customers-a" href="#">
-                        <svg class="customers-list-a" width="106" height="60">
-                            <use href="./images/svg-sprite/symbol-defs.svg#icon-Client-4"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-list">
-                    <a class="customers-a" href="#">
-                        <svg class="customers-list-a" width="106" height="60">
-                            <use href="./images/svg-sprite/symbol-defs.svg#icon-Client-5"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="customers-list">
-                    <a class="customers-a" href="#">
-                        <svg class="customers-list-a" width="106" height="60">
-                            <use href="./images/svg-sprite/symbol-defs.svg#icon-Client-6"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
 
     <!-- Подвал -->
     <footer class="footer">
@@ -402,5 +407,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
