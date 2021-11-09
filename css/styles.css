@@ -56,7 +56,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 165, 0, 0.5);
+  background-color: rgba(255, 165, 0, 0);
 }
 
 .backdrop.is-hidden {
@@ -76,6 +76,20 @@ img {
   background-color: #fff;
 
   transform: translate(-50%, -50%);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.backdrop-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px 8px 0 0;
+  padding: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 }
 
 .header,
@@ -488,8 +502,30 @@ img {
 .list-teams-border {
   margin-right: 30px;
 }
+
 .list-works-img:last-child {
   margin-right: 0;
+}
+.list-works-img {
+  position: relative;
+}
+
+.works-img-block {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.works-img-text {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.87;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 27px 0;
 }
 
 .list-teams-border {
