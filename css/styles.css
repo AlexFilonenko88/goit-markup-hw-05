@@ -798,9 +798,7 @@ img {
 }
 
 .teams-a:hover,
-.teams-a:focus,
-.icon:hover,
-.icon:focus {
+.teams-a:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
